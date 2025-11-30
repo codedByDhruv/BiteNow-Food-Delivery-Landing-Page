@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BiteNow – Food Delivery Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Material Symbols (Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNavbar"
+    data-bs-offset="80"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top bn-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <span
+            class="bn-brand-icon d-inline-flex align-items-center justify-content-center"
+          >
+            <span class="material-symbols-rounded"> ramen_dining </span>
+          </span>
+          <span class="bn-brand-text text-uppercase fw-semibold">
+            BiteNow
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-rounded"> menu </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bn-nav-links">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#restaurants">Restaurants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Reviews</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-lg-flex ms-3 align-items-center gap-2">
+            <a
+              href="#contact"
+              class="btn btn-sm bn-btn-ghost rounded-pill px-3"
+            >
+              Log in
+            </a>
+            <a
+              href="#contact"
+              class="btn btn-sm bn-btn-primary rounded-pill px-3"
+            >
+              Order now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="bn-hero-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Left -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="bn-hero-badge d-inline-flex align-items-center gap-2 mb-3">
+              <span class="bn-dot-live"></span>
+              <span class="small text-uppercase fw-semibold">
+                Fresh food in under 35 minutes
+              </span>
+            </span>
+
+            <h1 class="display-4 fw-bold bn-hero-title mb-3">
+              Your city’s
+              <span class="bn-gradient-text">best kitchens</span><br />
+              delivered to your door.
+            </h1>
+
+            <p class="lead text-muted mb-4">
+              Discover local favorites, cloud kitchens, and hidden gems in one
+              place. Real-time tracking, clean pricing, and food that arrives
+              exactly how it left the kitchen.
+            </p>
+
+            <!-- Location form -->
+            <form class="bn-location-form d-flex flex-column flex-sm-row gap-2 mb-3">
+              <div class="position-relative flex-grow-1">
+                <span
+                  class="material-symbols-rounded bn-input-icon text-muted"
+                >
+                  location_on
+                </span>
+                <input
+                  type="text"
+                  class="form-control bn-input ps-5"
+                  placeholder="Enter your area or pincode"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn bn-btn-primary rounded-pill d-inline-flex align-items-center justify-content-center gap-1 px-4"
+              >
+                <span class="material-symbols-rounded"> near_me </span>
+                Find food
+              </button>
+            </form>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 bn-hero-meta">
+              <div class="d-flex align-items-center gap-2">
+                <div class="bn-avatar-row">
+                  <span class="bn-avatar-circle"></span>
+                  <span class="bn-avatar-circle"></span>
+                  <span class="bn-avatar-circle"></span>
+                </div>
+                <div class="small text-muted">
+                  Trusted by
+                  <span class="fw-semibold text-dark">120k+</span> regulars
+                </div>
+              </div>
+              <div class="small text-muted d-flex align-items-center gap-1">
+                <span class="material-symbols-rounded text-warning">
+                  star
+                </span>
+                4.8 average delivery rating
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="bn-hero-visual">
+              <!-- Order summary card -->
+              <div class="bn-card bn-order-card shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <div class="small text-muted">Delivering to</div>
+                    <div class="fw-semibold">
+                      Home • <span class="text-success">ETA 28 min</span>
+                    </div>
+                  </div>
+                  <span class="badge bn-badge-soft d-flex align-items-center gap-1">
+                    <span class="material-symbols-rounded bn-icon-xs">
+                      bolt
+                    </span>
+                    Priority
+                  </span>
+                </div>
+
+                <div class="d-flex flex-column gap-3 mb-3">
+                  <!-- Item 1 -->
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="bn-thumb rounded-3 overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/4109132/pexels-photo-4109132.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Burger"
+                        class="img-fluid w-100 h-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <div class="small fw-semibold">
+                        Double Smash Burger
+                      </div>
+                      <div class="small text-muted">
+                        Grill House • 25–30 min
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="small fw-semibold">$12.50</div>
+                      <div class="small text-muted">x1</div>
+                    </div>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="bn-thumb rounded-3 overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Pasta"
+                        class="img-fluid w-100 h-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <div class="small fw-semibold">
+                        Creamy Truffle Pasta
+                      </div>
+                      <div class="small text-muted">
+                        Urban Dine • 20–25 min
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="small fw-semibold">$14.90</div>
+                      <div class="small text-muted">x1</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                  <div class="small text-muted">Total (incl. delivery)</div>
+                  <div class="fw-semibold">$27.40</div>
+                </div>
+              </div>
+
+              <!-- Secondary cards -->
+              <div class="bn-card bn-floating-card-1 shadow-sm">
+                <div class="d-flex gap-2 align-items-center">
+                  <span class="material-symbols-rounded text-success">
+                    route
+                  </span>
+                  <div>
+                    <div class="small fw-semibold">Driver en route</div>
+                    <div class="small text-muted">8 minutes away</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bn-card bn-floating-card-2 shadow-sm">
+                <div class="d-flex gap-2 align-items-center">
+                  <span class="material-symbols-rounded text-danger">
+                    local_fire_department
+                  </span>
+                  <div>
+                    <div class="small fw-semibold">Hot today</div>
+                    <div class="small text-muted">
+                      30% OFF on all pizza orders.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Curved background shape -->
+              <div class="bn-hero-shape"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- RESTAURANTS -->
+    <section id="restaurants" class="py-5 bn-section">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div data-aos="fade-up">
+            <h2 class="h2 fw-semibold mb-2">Top picks near you</h2>
+            <p class="text-muted mb-0">
+              High-rated locals, quick kitchens, and verified delivery partners.
+            </p>
+          </div>
+          <div
+            class="mt-3 mt-md-0 d-flex gap-2 align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <button
+              class="btn btn-sm bn-btn-ghost rounded-pill d-inline-flex align-items-center gap-1"
+            >
+              <span class="material-symbols-rounded"> tune </span>
+              Filters
+            </button>
+            <button
+              class="btn btn-sm bn-btn-outline rounded-pill d-inline-flex align-items-center gap-1"
+            >
+              <span class="material-symbols-rounded"> map </span>
+              View map
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <article class="bn-restaurant-card">
+              <div class="bn-restaurant-card-inner">
+                <div class="bn-restaurant-top">
+                  <div class="bn-restaurant-img">
+                    <img
+                      src="https://images.pexels.com/photos/4109134/pexels-photo-4109134.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Grill House"
+                    />
+                    <span class="bn-restaurant-tag">Burgers • Fast food</span>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="mb-0">Grill House</h5>
+                      <span class="bn-rating-pill">
+                        <span class="material-symbols-rounded bn-icon-xs">
+                          star
+                        </span>
+                        4.8
+                      </span>
+                    </div>
+                    <p class="small text-muted mb-0">
+                      Smash burgers, loaded fries &amp; late-night combos.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bn-restaurant-meta d-flex flex-wrap gap-2 small text-muted"
+                >
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      schedule
+                    </span>
+                    25–30 min
+                  </span>
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      payments
+                    </span>
+                    $ • Free delivery
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="40">
+            <article class="bn-restaurant-card">
+              <div class="bn-restaurant-card-inner">
+                <div class="bn-restaurant-top">
+                  <div class="bn-restaurant-img">
+                    <img
+                      src="https://images.pexels.com/photos/4109128/pexels-photo-4109128.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Midnight Crust"
+                    />
+                    <span class="bn-restaurant-tag">Pizza • Italian</span>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="mb-0">Midnight Crust</h5>
+                      <span class="bn-rating-pill">
+                        <span class="material-symbols-rounded bn-icon-xs">
+                          star
+                        </span>
+                        4.7
+                      </span>
+                    </div>
+                    <p class="small text-muted mb-0">
+                      Wood-fired pizzas, garlic bread &amp; late-night slices.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bn-restaurant-meta d-flex flex-wrap gap-2 small text-muted"
+                >
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      schedule
+                    </span>
+                    30–35 min
+                  </span>
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      local_fire_department
+                    </span>
+                    $$ • 20% off
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+            <article class="bn-restaurant-card">
+              <div class="bn-restaurant-card-inner">
+                <div class="bn-restaurant-top">
+                  <div class="bn-restaurant-img">
+                    <img
+                      src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Green Fork"
+                    />
+                    <span class="bn-restaurant-tag">Healthy • Bowls</span>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="mb-0">Green Fork</h5>
+                      <span class="bn-rating-pill">
+                        <span class="material-symbols-rounded bn-icon-xs">
+                          star
+                        </span>
+                        4.9
+                      </span>
+                    </div>
+                    <p class="small text-muted mb-0">
+                      Macro bowls, smoothies &amp; cold-pressed juices.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bn-restaurant-meta d-flex flex-wrap gap-2 small text-muted"
+                >
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      schedule
+                    </span>
+                    20–25 min
+                  </span>
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      payments
+                    </span>
+                    $$ • Free delivery
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+            <article class="bn-restaurant-card">
+              <div class="bn-restaurant-card-inner">
+                <div class="bn-restaurant-top">
+                  <div class="bn-restaurant-img">
+                    <img
+                      src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt="Spice Street"
+                    />
+                    <span class="bn-restaurant-tag">Asian • Bowls</span>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="mb-0">Spice Street</h5>
+                      <span class="bn-rating-pill">
+                        <span class="material-symbols-rounded bn-icon-xs">
+                          star
+                        </span>
+                        4.6
+                      </span>
+                    </div>
+                    <p class="small text-muted mb-0">
+                      Stir-fries, noodles &amp; rice bowls with big flavour.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bn-restaurant-meta d-flex flex-wrap gap-2 small text-muted"
+                >
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      schedule
+                    </span>
+                    25–30 min
+                  </span>
+                  <span class="bn-meta-pill">
+                    <span class="material-symbols-rounded bn-icon-xs me-1">
+                      local_offer
+                    </span>
+                    $ • Combo offers
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category chips -->
+        <div
+          class="d-flex flex-wrap gap-2 mt-4 small bn-chip-row"
+          data-aos="fade-up"
+          data-aos-delay="160"
+        >
+          <span class="bn-chip active">All cuisines</span>
+          <span class="bn-chip">Burgers</span>
+          <span class="bn-chip">Pizza</span>
+          <span class="bn-chip">Indian</span>
+          <span class="bn-chip">Asian</span>
+          <span class="bn-chip">Healthy</span>
+          <span class="bn-chip">Desserts</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section
+      id="how-it-works"
+      class="py-5 bn-section bn-section-soft"
+    >
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <h2 class="h2 fw-semibold mb-3">Order in three easy steps</h2>
+            <p class="text-muted mb-4">
+              From craving to doorstep in minutes. No awkward calls, no
+              confusion, no surprises at checkout.
+            </p>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex gap-3">
+                <div class="bn-step-number">1</div>
+                <div>
+                  <div class="fw-semibold mb-1">Enter your location</div>
+                  <small class="text-muted">
+                    See only restaurants that can reach you on time, based on
+                    live kitchen load and traffic.
+                  </small>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="bn-step-number">2</div>
+                <div>
+                  <div class="fw-semibold mb-1">Build your perfect cart</div>
+                  <small class="text-muted">
+                    Customize dishes, add extras, and save favorites for
+                    one-tap ordering next time.
+                  </small>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="bn-step-number">3</div>
+                <div>
+                  <div class="fw-semibold mb-1">Track every step</div>
+                  <small class="text-muted">
+                    Watch your order move from kitchen to your door with
+                    accurate, live ETAs.
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="bn-info-card h-100">
+                  <span class="bn-icon-pill mb-2">
+                    <span class="material-symbols-rounded"> schedule </span>
+                  </span>
+                  <h5 class="mb-1">Schedule ahead</h5>
+                  <p class="small text-muted mb-0">
+                    Set delivery windows for later in the day so your food
+                    arrives right when the meeting ends.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bn-info-card h-100">
+                  <span class="bn-icon-pill mb-2">
+                    <span class="material-symbols-rounded"> payments </span>
+                  </span>
+                  <h5 class="mb-1">Multiple payments</h5>
+                  <p class="small text-muted mb-0">
+                    UPI, cards, wallets and cash — all supported with secure,
+                    two-step checkout.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bn-info-card h-100">
+                  <span class="bn-icon-pill mb-2">
+                    <span class="material-symbols-rounded"> shield </span>
+                  </span>
+                  <h5 class="mb-1">Order protection</h5>
+                  <p class="small text-muted mb-0">
+                    Food spilled or missing? Our support team fixes it fast
+                    with replacements or credits.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bn-info-card h-100">
+                  <span class="bn-icon-pill mb-2">
+                    <span class="material-symbols-rounded"> restaurant_menu </span>
+                  </span>
+                  <h5 class="mb-1">Smart collections</h5>
+                  <p class="small text-muted mb-0">
+                    Explore “Under 30 min”, “Guilt-free”, and “Late-night only”
+                    curated stacks just for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-5 bn-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="h2 fw-semibold mb-2">Built for real-life delivery</h2>
+          <p class="text-muted mb-0">
+            BiteNow is designed for messy cities, busy days, and serious
+            cravings — not just perfect-case scenarios.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="bn-feature-card h-100">
+              <div class="bn-icon-pill mb-3">
+                <span class="material-symbols-rounded"> trending_up </span>
+              </div>
+              <h5 class="mb-2">Realistic delivery times</h5>
+              <p class="small text-muted mb-0">
+                ETAs that actually match reality, using live traffic and kitchen
+                capacity — not guesses.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="60">
+            <div class="bn-feature-card h-100">
+              <div class="bn-icon-pill mb-3">
+                <span class="material-symbols-rounded"> receipt </span>
+              </div>
+              <h5 class="mb-2">Transparent bills</h5>
+              <p class="small text-muted mb-0">
+                See item prices, taxes, and delivery costs clearly before you
+                check out. No hidden platform fees.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="120">
+            <div class="bn-feature-card h-100">
+              <div class="bn-icon-pill mb-3">
+                <span class="material-symbols-rounded"> favorite </span>
+              </div>
+              <h5 class="mb-2">Taste-first recommendations</h5>
+              <p class="small text-muted mb-0">
+                Get suggestions tuned to your flavor profile instead of whoever
+                paid for the top banner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS + APP CTA -->
+    <section
+      id="testimonials"
+      class="py-5 bn-section bn-section-soft"
+    >
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Testimonials -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="mb-4">
+              <h2 class="h2 fw-semibold mb-2">Loved by food-first people</h2>
+              <p class="text-muted mb-0">
+                From solo dinners to team lunches and late-night cravings, our
+                most active users live inside BiteNow.
+              </p>
+            </div>
+
+            <div
+              id="reviewCarousel"
+              class="carousel slide bn-review-carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-4 bn-card p-4">
+                <div class="carousel-item active">
+                  <p class="mb-4">
+                    “The ETAs are actually accurate. I’ve stopped calling
+                    restaurants to ask ‘where is my order’ — BiteNow just gets
+                    it right.”
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="bn-avatar-pill">AK</div>
+                      <div>
+                        <div class="fw-semibold">Akash Mehra</div>
+                        <small class="text-muted">Orders 4× a week</small>
+                      </div>
+                    </div>
+                    <div class="text-warning d-flex align-items-center gap-1">
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star_half
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <p class="mb-4">
+                    “We’re a small kitchen and finally feel seen. The app sends
+                    us people who actually love what we serve, not just deals
+                    hunters.”
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="bn-avatar-pill">GF</div>
+                      <div>
+                        <div class="fw-semibold">Green Fork Kitchen</div>
+                        <small class="text-muted">Partner restaurant</small>
+                      </div>
+                    </div>
+                    <div class="text-warning d-flex align-items-center gap-1">
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <p class="mb-4">
+                    “Bulk orders for our office used to be chaos. Now everything
+                    is scheduled, itemized, and on time.”
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="bn-avatar-pill">PR</div>
+                      <div>
+                        <div class="fw-semibold">Product Room</div>
+                        <small class="text-muted">Startup team</small>
+                      </div>
+                    </div>
+                    <div class="text-warning d-flex align-items-center gap-1">
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                      <span class="material-symbols-rounded bn-icon-xs">
+                        star
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- App CTA -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="bn-app-cta bn-card p-4 p-md-5 h-100">
+              <div class="mb-4">
+                <h3 class="fw-semibold mb-2">Faster on the BiteNow app</h3>
+                <p class="text-muted small mb-0">
+                  Save your addresses, track in the background, and get
+                  early access to limited drops and new kitchen partners.
+                </p>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3 mb-4">
+                <button
+                  class="btn bn-store-btn rounded-3 d-inline-flex align-items-center gap-2 px-3"
+                >
+                  <span class="material-symbols-rounded"> phone_iphone </span>
+                  <span class="text-start">
+                    <small class="d-block text-muted">Download on</small>
+                    <span class="fw-semibold">App Store</span>
+                  </span>
+                </button>
+                <button
+                  class="btn bn-store-btn rounded-3 d-inline-flex align-items-center gap-2 px-3"
+                >
+                  <span class="material-symbols-rounded"> play_circle </span>
+                  <span class="text-start">
+                    <small class="d-block text-muted">Get it on</small>
+                    <span class="fw-semibold">Google Play</span>
+                  </span>
+                </button>
+              </div>
+
+              <div class="row g-3 small text-muted">
+                <div class="col-6">
+                  <div class="fw-semibold text-dark mb-1">4.8</div>
+                  Average rating across stores
+                </div>
+                <div class="col-6">
+                  <div class="fw-semibold text-dark mb-1">1M+</div>
+                  Orders delivered via app
+                </div>
+                <div class="col-6">
+                  <div class="fw-semibold text-dark mb-1">70+</div>
+                  Cities live today
+                </div>
+                <div class="col-6">
+                  <div class="fw-semibold text-dark mb-1">24/7</div>
+                  Support for customers & partners
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + CONTACT -->
+    <section id="contact" class="py-5 bn-section">
+      <div class="container">
+        <div class="row g-5">
+          <!-- FAQ -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="h2 fw-semibold mb-3">Questions, answered.</h2>
+            <p class="text-muted mb-4">
+              A few things people usually want to clarify before their first
+              order or partnership.
+            </p>
+
+            <div class="accordion bn-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Do you charge extra delivery or platform fees?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body small text-muted">
+                    We show a clear breakdown of item total, taxes and delivery
+                    before you pay. No hidden “platform charges” at the last
+                    screen.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What happens if my order is late or incorrect?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body small text-muted">
+                    Tap “Issue with order” in the app and our team will review
+                    and resolve it quickly with refunds, replacements or BiteNow
+                    credits based on the case.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Can I schedule an order for later?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body small text-muted">
+                    Yes. Choose a time window for later today or tomorrow and
+                    we’ll coordinate with the restaurant and drivers to match
+                    it.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    I own a restaurant. How do I partner with BiteNow?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body small text-muted">
+                    Use the form here, select “Restaurant owner”, share basic
+                    details and our partnerships team will help you set up your
+                    menu, pricing and schedules.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="bn-card p-4 p-md-5">
+              <h4 class="fw-semibold mb-2">Partner or say hello</h4>
+              <p class="text-muted small mb-4">
+                Whether you’re hungry, running a kitchen, or ordering for a
+                team — tell us a little and we’ll respond within 24 hours.
+              </p>
+
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control bn-input"
+                    placeholder="What should we call you?"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small">Email</label>
+                  <input
+                    type="email"
+                    class="form-control bn-input"
+                    placeholder="Where can we reply?"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small">You are a…</label>
+                  <select class="form-select bn-input">
+                    <option>Hungry customer</option>
+                    <option>Restaurant owner</option>
+                    <option>Office / team lead</option>
+                    <option>Delivery partner</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small">City</label>
+                  <input
+                    type="text"
+                    class="form-control bn-input"
+                    placeholder="Where are you based?"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label small">Message</label>
+                  <textarea
+                    rows="3"
+                    class="form-control bn-input"
+                    placeholder="Tell us what you’re looking for."
+                  ></textarea>
+                </div>
+                <div
+                  class="col-12 d-flex flex-wrap justify-content-between align-items-center gap-2"
+                >
+                  <small class="text-muted">
+                    No spam. Just a clear reply with next steps.
+                  </small>
+                  <button
+                    type="submit"
+                    class="btn bn-btn-primary rounded-pill d-inline-flex align-items-center gap-1 px-4"
+                  >
+                    <span class="material-symbols-rounded"> send </span>
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top bg-white">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"
+        >
+          <div>
+            <div class="text-uppercase small text-muted">BiteNow</div>
+            <div class="small text-muted">
+              © <span id="year"></span> All rights reserved.
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-3 small text-muted">
+            <span class="text-nowrap d-flex align-items-center gap-1">
+              <span class="material-symbols-rounded bn-icon-xs">
+                lock
+              </span>
+              Secure payments
+            </span>
+            <span class="text-nowrap d-flex align-items-center gap-1">
+              <span class="material-symbols-rounded bn-icon-xs">
+                eco
+              </span>
+              Eco-conscious partners
+            </span>
+            <span class="text-nowrap d-flex align-items-center gap-1">
+              <span class="material-symbols-rounded bn-icon-xs">
+                headset_mic
+              </span>
+              24/7 support
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Update year
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+      // Init AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 120,
+      });
+    </script>
+  </body>
+</html>
